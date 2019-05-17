@@ -1,0 +1,105 @@
+html {
+	position: relative;
+	width: auto; 
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(2,9,34);
+    background: -moz-linear-gradient(337deg, rgba(2,9,34,1) 0%, rgba(25,69,86,1) 100%);
+    background: -webkit-linear-gradient(337deg, rgba(2,9,34,1) 0%, rgba(25,69,86,1) 100%);
+    background: linear-gradient(337deg, rgba(2,9,34,1) 0%, rgba(25,69,86,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020922",endColorstr="#194556",GradientType=1);   
+}
+.custom-navbar {
+    margin-top: 15px;
+    margin-left: 70px;
+    background-color: rgba(0,0,0,0);
+    /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 50px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+    color: white;
+  }
+
+.navbar-nav {
+    margin-left: 45%;
+}
+.navbar-nav li {
+    padding: 0 50px;
+}
+
+.opaque {
+    background-color: rgba(0,0,0,0.7);
+    height: 50px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.main img {
+    margin-top: 27%;
+    margin-left: 20%;
+    height: 430px;
+    transform: rotate(90deg);
+    transition : .5s;
+}
+
+.main img:hover {
+    margin-top: 27%;
+    margin-left: 20%;
+    height: 430px;
+    transform: rotate(270deg);
+    transition : .5s;
+}
+
+.submain {
+    margin-top: 20%;
+    padding-left: 80px;
+}
+
+.submain h2{
+    color: #2a6273;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40pt;
+}
+
+.submain p {
+    margin-top: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14pt;
+}
+
+.submain button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    font-weight: 500;
+    background-color: #1c4c5b;
+    color: white;
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main img {
+      display: none;
+  }
+  .submain {
+     padding-left: 10px;
+  }
+  .submain h2 {
+    text-align: center;
+      margin-top: 50%;
+      font-size: 40px;
+  }
+  .submain p {
+    text-align: center;
+      font-size : 15px;
+  }
+  .submain button {
+      justify-content: center;
+      width: 80%;
+      margin-right: 10%;
+  }
+}
